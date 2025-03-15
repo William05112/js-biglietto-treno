@@ -22,7 +22,6 @@ let annodinascitatre = 2025 - etaconvertita + 1;
 
 console.log(`Hai ${annieta} dunque sei nato ipoteticamente nel ${annodinascitatre}, nel ${annodinascitauno} o nel ${annodinascitadue} non sapendo il mese di nascita.`);
 
-let annina = 20
 
 
 
