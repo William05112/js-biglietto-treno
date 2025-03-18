@@ -39,7 +39,10 @@ if (etaconvertita < 18){
 else{
     prezzofinale = prezzobase;
 }
-console.log(`Il prezzo del biglietto calcolato quindi è di ${prezzofinale} euro per ${km} da te scelti.`);
+
+const prezzofinalestringa = prezzofinale.toFixed(2);
+
+console.log(`Il prezzo del biglietto calcolato quindi è di ${prezzofinalestringa} euro per ${km} da te scelti.`);
 
 
 
