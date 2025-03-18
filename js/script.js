@@ -33,16 +33,21 @@ const sconto65 = prezzobase * 40 / 100;
 let prezzofinale;
 if (etaconvertita < 18){
     prezzofinale = prezzobase - sconto18;
+    console.log(`Il prezzo finale è di ${prezzofinale.toFixed(2)} euro per ${km} da te scelti grazie ad uno sconto del 20% per i minorenni sul prezzo base di ${prezzobase.toFixed(2)} euro.`);
+    
 }else if (etaconvertita > 65){
     prezzofinale = prezzobase - sconto65;
+    console.log(`Il prezzo finale è di ${prezzofinale.toFixed(2)} euro per ${km} da te scelti grazie ad uno sconto del 40% per gli over 65 sul prezzo base di ${prezzobase.toFixed(2)} euro.`);
+    
 }
 else{
     prezzofinale = prezzobase;
+    console.log(`Il prezzo finale è di ${prezzofinale.toFixed(2)} euro per ${km} da te scelti.`);
 }
 
-const prezzofinalestringa = prezzofinale.toFixed(2);
+//const prezzofinalestringa = prezzofinale.toFixed(2);
 
-console.log(`Il prezzo del biglietto calcolato quindi è di ${prezzofinalestringa} euro per ${km} da te scelti.`);
+//console.log(`Il prezzo del biglietto calcolato quindi è di ${prezzofinalestringa} euro per ${km} da te scelti.`);
 
 
 
